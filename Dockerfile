@@ -2,6 +2,7 @@ FROM python:3.8-slim-buster
 WORKDIR /neww - fixed
 COPY requirements.txt .
 #COPY . .
+# ayushi is here
 RUN pip install -r requirements.txt
 COPY migrations/ migrations/
 COPY app.py .
